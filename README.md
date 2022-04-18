@@ -1,7 +1,7 @@
 # django-switcher
 Django script to switch/move to a new database
 
-First of all you have to set 2 databases on your setting file:
+First of all you have to set 2 databases on your setting file, in my case I was moving from Mysql to Postgresql:
 
 ```python
    DATABASES = {
