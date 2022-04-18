@@ -1,5 +1,9 @@
 # django-switcher
-Django script to switch/move to a new database
+Django script to switch/move to a new database.
+
+Dump database to a json file is not a good option and this is lazy, so I had to write this script.
+
+This script may stop for timeout, it depends on the size of your database. You can edit it to do it in stages, or save what has already been imported somewhere to continue with a new attempt.
 
 First of all you have to set 2 databases on your setting file, in my case I was moving from Mysql to Postgresql:
 
