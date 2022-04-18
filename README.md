@@ -37,3 +37,15 @@ Copy **dbmove.py** on a **management** path on your project and run:
 ```
 python manage.py dbmove
 ```
+
+
+In some cases I had problems setting the maximum id of the tables and I had to run this snippet separately
+
+```python
+for table in tables:
+    with connections[ db_destination ].cursor() as cursor:
+        try:
+            cursor.execute( "select setval('" + table + "_id_seq', max(id)) from " + table )
+        except:
+            continue
+```
