@@ -1,4 +1,4 @@
-# django-switcher
+# django-db-switcher
 Django script to switch/move to a new database.
 
 Dump database to a json file is not a good option and this is lazy, so I had to write this script.
