@@ -36,7 +36,7 @@ db_origin = 'default'
 db_destination = 'postgresql'
 ```
 
-Copy **dbmove.py** on a **management** path on your project and run:
+Copy **dbmove.py** to a **management** path on your project and run:
 
 ```
 python manage.py dbmove
@@ -53,3 +53,4 @@ for table in tables:
         except:
             continue
 ```
+
